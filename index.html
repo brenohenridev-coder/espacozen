@@ -6,32 +6,7 @@
 <title>Espaço Zen — Reabilitação e Saúde Multidisciplinar</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
-/* ── GUIA DE IMAGENS (visível só em desenvolvimento) ── */
-.img-guide{
-  position:absolute;inset:0;
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;
-  background:rgba(212,168,67,.18);
-  border:3px dashed #d4a843;
-  z-index:5;padding:16px;text-align:center;
-  pointer-events:none;
-}
-.img-guide .ig-label{
-  background:#d4a843;color:#0d1b4b;
-  font-family:'DM Sans',sans-serif;
-  font-size:.8rem;font-weight:700;
-  letter-spacing:.08em;text-transform:uppercase;
-  padding:4px 12px;border-radius:3px;margin-bottom:8px;
-}
-.img-guide .ig-filename{
-  background:#0d1b4b;color:#d4a843;
-  font-family:monospace;font-size:1rem;font-weight:700;
-  padding:6px 14px;border-radius:3px;word-break:break-all;
-}
-.img-guide .ig-hint{
-  color:#0d1b4b;font-size:.72rem;margin-top:6px;font-weight:500;
-}
-/* ── FIM GUIA ── */
+
 
 :root{
   --navy:#0d1b4b;
@@ -261,12 +236,6 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
 
 <!-- FLOAT WHATSAPP -->
 <a href="https://wa.me/5521988326813" target="_blank" class="float-wa" title="WhatsApp" aria-label="Abrir WhatsApp">💬</a>
-
-<!-- ═══════════════════════════════════════════════
-  📌 IMAGEM 1 — LOGO (NAVBAR)
-  Arquivo atual: logozen.png
-  Coloque o arquivo "logozen.png" na mesma pasta do HTML
-═══════════════════════════════════════════════ -->
 <nav id="navbar">
   <div class="nav-logo">
     <!-- ✅ Logo já configurada — certifique-se que "logozen.png" está na pasta -->
@@ -297,18 +266,9 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
 
   <div class="hero-visual">
     <div class="hero-visual-inner">
-      <!-- ═══════════════════════════════════════════════
-        📌 IMAGEM 2 — FOTO PRINCIPAL (HERO)
-        Troque "NOME_DA_FOTO.jpg" pelo nome real do arquivo
-        Exemplo: src="foto-principal.jpg"
-        Recomendação: foto vertical (formato retrato), boa qualidade
-      ═══════════════════════════════════════════════ -->
       <div class="hero-card">
         <div style="position:relative;width:100%;height:100%;">
           <img src="NOME_DA_FOTO_PRINCIPAL.jpg" alt="Espaço Zen" style="width:100%;height:100%;object-fit:cover;display:block;">
-          <!-- Guia visual (remova depois de colocar a foto) -->
-          <div class="img-guide">
-            <div class="ig-label">📌 Imagem 2 — Foto Principal (Hero)</div>
             <div class="ig-filename">NOME_DA_FOTO_PRINCIPAL.jpg</div>
             <div class="ig-hint">Substitua pelo nome real do seu arquivo<br>Ex: foto-capa.jpg | fachada.jpg | equipe.jpg</div>
           </div>
@@ -359,17 +319,8 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
 <section id="mel">
   <div class="mel-layout">
     <div class="mel-img-wrap reveal">
-      <!-- ═══════════════════════════════════════════════
-        📌 IMAGEM 3 — FOTO DA MEL
-        Arquivo atual: cachorra.jpg
-        Certifique-se que "cachorra.jpg" está na mesma pasta
-        Para trocar: altere src="cachorra.jpg" para seu arquivo
-      ═══════════════════════════════════════════════ -->
       <div class="mel-circle" style="position:relative;">
         <img src="cachorra.jpg" alt="Mel - Golden Retriever Terapeuta">
-        <!-- Guia visual (remova depois de confirmar a foto) -->
-        <div class="img-guide" style="border-radius:50%;">
-          <div class="ig-label">📌 Imagem 3 — A Mel</div>
           <div class="ig-filename">cachorra.jpg</div>
           <div class="ig-hint">Foto circular da Mel<br>Já configurada!</div>
         </div>
@@ -402,20 +353,12 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
     </div>
     <p class="body-text">Cada imagem representa uma conquista, um sorriso, um passo adiante. Venha fazer parte da nossa história.</p>
   </div>
-
-  <!-- ═══════════════════════════════════════════════
-    📌 IMAGENS 4 a 9 — GALERIA (CARROSSEL)
-    6 fotos no total. Troque cada "GALERIA_X.jpg" pelo nome real.
-    Recomendação: fotos horizontais (landscape), mínimo 800x600px
-  ═══════════════════════════════════════════════ -->
   <div class="carousel-outer reveal">
     <div class="carousel-track" id="cTrack">
 
       <!-- SLIDE 1 -->
       <div class="c-slide" style="position:relative;">
         <img src="GALERIA_1.jpg" alt="Equoterapia" style="width:100%;height:100%;object-fit:cover;">
-        <div class="img-guide">
-          <div class="ig-label">📌 Imagem 4 — Galeria 1</div>
           <div class="ig-filename">GALERIA_1.jpg</div>
           <div class="ig-hint">Sugestão: foto de equoterapia</div>
         </div>
@@ -425,8 +368,6 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
       <!-- SLIDE 2 -->
       <div class="c-slide" style="position:relative;">
         <img src="GALERIA_2.jpg" alt="Fisioterapia Aquática" style="width:100%;height:100%;object-fit:cover;">
-        <div class="img-guide">
-          <div class="ig-label">📌 Imagem 5 — Galeria 2</div>
           <div class="ig-filename">GALERIA_2.jpg</div>
           <div class="ig-hint">Sugestão: hidroterapia / piscina</div>
         </div>
@@ -436,8 +377,6 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
       <!-- SLIDE 3 -->
       <div class="c-slide" style="position:relative;">
         <img src="GALERIA_3.jpg" alt="Musicoterapia" style="width:100%;height:100%;object-fit:cover;">
-        <div class="img-guide">
-          <div class="ig-label">📌 Imagem 6 — Galeria 3</div>
           <div class="ig-filename">GALERIA_3.jpg</div>
           <div class="ig-hint">Sugestão: musicoterapia / sala</div>
         </div>
@@ -447,8 +386,6 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
       <!-- SLIDE 4 -->
       <div class="c-slide" style="position:relative;">
         <img src="GALERIA_4.jpg" alt="A Mel em ação" style="width:100%;height:100%;object-fit:cover;">
-        <div class="img-guide">
-          <div class="ig-label">📌 Imagem 7 — Galeria 4</div>
           <div class="ig-filename">GALERIA_4.jpg</div>
           <div class="ig-hint">Sugestão: a Mel com pacientes</div>
         </div>
@@ -458,8 +395,6 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
       <!-- SLIDE 5 -->
       <div class="c-slide" style="position:relative;">
         <img src="GALERIA_5.jpg" alt="Natação" style="width:100%;height:100%;object-fit:cover;">
-        <div class="img-guide">
-          <div class="ig-label">📌 Imagem 8 — Galeria 5</div>
           <div class="ig-filename">GALERIA_5.jpg</div>
           <div class="ig-hint">Sugestão: aulas de natação</div>
         </div>
@@ -469,8 +404,6 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
       <!-- SLIDE 6 -->
       <div class="c-slide" style="position:relative;">
         <img src="GALERIA_6.jpg" alt="Terapia Ocupacional" style="width:100%;height:100%;object-fit:cover;">
-        <div class="img-guide">
-          <div class="ig-label">📌 Imagem 9 — Galeria 6</div>
           <div class="ig-filename">GALERIA_6.jpg</div>
           <div class="ig-hint">Sugestão: terapia ocupacional</div>
         </div>
@@ -493,19 +426,11 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
     <h2 class="h-display">Um ambiente pensado<br>com <em>cuidado e amor</em></h2>
     <p class="body-text">Cada detalhe do nosso espaço foi projetado para ser acolhedor, seguro e estimulante — um lugar onde tanto crianças quanto adultos se sentem em casa.</p>
   </div>
-
-  <!-- ═══════════════════════════════════════════════
-    📌 IMAGENS 10 a 13 — GRADE DO ESPAÇO
-    4 fotos. ESPACO_1 é maior (ocupa 2 linhas).
-    Recomendação: fotos do espaço físico, bem iluminadas
-  ═══════════════════════════════════════════════ -->
   <div class="pg reveal">
 
     <!-- FOTO GRANDE (coluna esquerda, 2 linhas) -->
     <div class="pg-cell tall" style="position:relative;">
       <img src="ESPACO_1.jpg" alt="Área principal">
-      <div class="img-guide">
-        <div class="ig-label">📌 Imagem 10 — Espaço (grande)</div>
         <div class="ig-filename">ESPACO_1.jpg</div>
         <div class="ig-hint">Foto grande — área principal<br>Ocupa toda a coluna esquerda</div>
       </div>
@@ -515,8 +440,6 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
     <!-- FOTO TOPO DIREITA -->
     <div class="pg-cell" style="position:relative;">
       <img src="ESPACO_2.jpg" alt="Piscina terapêutica">
-      <div class="img-guide">
-        <div class="ig-label">📌 Imagem 11 — Espaço 2</div>
         <div class="ig-filename">ESPACO_2.jpg</div>
         <div class="ig-hint">Sugestão: piscina terapêutica</div>
       </div>
@@ -526,8 +449,6 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
     <!-- FOTO TOPO FAR RIGHT -->
     <div class="pg-cell" style="position:relative;">
       <img src="ESPACO_3.jpg" alt="Sala de TO">
-      <div class="img-guide">
-        <div class="ig-label">📌 Imagem 12 — Espaço 3</div>
         <div class="ig-filename">ESPACO_3.jpg</div>
         <div class="ig-hint">Sugestão: sala de TO</div>
       </div>
@@ -537,8 +458,6 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
     <!-- FOTO BAIXO (span 2 colunas) -->
     <div class="pg-cell" style="grid-column:span 2;position:relative;">
       <img src="ESPACO_4.jpg" alt="Área de equoterapia">
-      <div class="img-guide">
-        <div class="ig-label">📌 Imagem 13 — Espaço 4 (panorâmica)</div>
         <div class="ig-filename">ESPACO_4.jpg</div>
         <div class="ig-hint">Foto panorâmica — área de equoterapia ou área externa</div>
       </div>
