@@ -154,6 +154,24 @@ h2.h-display.light em{color:var(--gold-light);}
 .c-dot{width:8px;height:8px;border-radius:2px;background:rgba(13,27,75,.2);border:none;cursor:pointer;transition:background .2s,width .2s;}
 .c-dot.active{background:var(--navy);width:24px;}
 
+/* GAIOLA NEUROFUNCIONAL */
+#gaiola{background:var(--off-white);}
+.gaiola-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.gaiola-text .section-label{color:var(--gold);}
+.gaiola-text p{font-size:1rem;line-height:1.9;color:var(--text-muted);font-weight:300;margin-bottom:18px;}
+.gaiola-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
+.gaiola-pill{display:inline-flex;align-items:center;gap:8px;background:var(--gold-pale);border:1px solid var(--border);color:var(--navy);padding:8px 16px;border-radius:4px;font-size:.82rem;font-weight:500;}
+.vcarousel-wrap{position:relative;width:100%;max-width:460px;margin:0 auto;aspect-ratio:3/4;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--border);}
+.vcarousel-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s ease;}
+.vcarousel-wrap img.vc-active{opacity:1;}
+.vcarousel-dots{position:absolute;right:16px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px;z-index:5;}
+.vc-dot{width:10px;height:10px;border-radius:2px;background:rgba(255,255,255,.4);border:none;cursor:pointer;transition:background .3s,height .3s;}
+.vc-dot.active{background:var(--gold);height:28px;}
+@media(max-width:960px){
+  .gaiola-layout{grid-template-columns:1fr;}
+  .vcarousel-wrap{max-width:400px;}
+}
+
 /* PHOTO GRID */
 #espaco{background:var(--white);}
 .pg{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:280px 280px;gap:16px;margin-top:56px;}
@@ -298,6 +316,7 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
     <div class="svc-card"><div class="svc-icon">🎵</div><h3>Musicoterapia</h3><p>Uso terapêutico da música para estimular habilidades cognitivas e emocionais.</p></div>
     <div class="svc-card"><div class="svc-icon">🥗</div><h3>Nutricionista</h3><p>Orientação nutricional especializada, incluindo suporte para públicos atípicos.</p></div>
     <div class="svc-card"><div class="svc-icon">📚</div><h3>Psicopedagoga</h3><p>Avaliação e intervenção nas dificuldades de aprendizagem e desenvolvimento escolar.</p></div>
+
     <div class="svc-card"><div class="svc-icon">🤸</div><h3>Psicomotricidade</h3><p>Integração entre movimento e cognição para um desenvolvimento global harmonioso.</p></div>
     <div class="svc-card"><div class="svc-icon">🧠</div><h3>Psicóloga</h3><p>Acompanhamento psicológico individual, familiar e de suporte ao desenvolvimento.</p></div>
     <div class="svc-card"><div class="svc-icon">🔬</div><h3>Avaliação Neuropsicológica</h3><p>Avaliação completa das funções cognitivas para diagnóstico preciso.</p></div>
@@ -305,9 +324,49 @@ footer{background:var(--navy);padding:72px 5% 32px;border-top:1px solid rgba(212
     <div class="svc-card"><div class="svc-icon">🤝</div><h3>AT — Assistente Terapêutica</h3><p>Apoio individualizado nas atividades diárias, promovendo autonomia e inclusão.</p></div>
     <div class="svc-card"><div class="svc-icon">🎨</div><h3>TO — Terapeuta Ocupacional</h3><p>Facilita a participação nas atividades cotidianas, adaptando ambiente e estratégias.</p></div>
     <div class="svc-card"><div class="svc-icon">🏊</div><h3>Natação Bebê / Infantil / Adulto</h3><p>Aulas de natação para todas as idades em ambiente seguro e acolhedor.</p></div>
-    <div class="svc-card"><div class="svc-icon">🌊</div><h3>Natação com Psicomotricidade</h3><p>Natação integrada com estimulação psicomotora para um desenvolvimento completo.</p></div>
   </div>
 </section>
+
+<!-- GAIOLA DE HABILIDADE NEUROFUNCIONAL -->
+<section id="gaiola">
+  <div class="gaiola-layout">
+    <div class="gaiola-text reveal">
+      <div class="section-label">Serviço exclusivo</div>
+      <h2 class="h-display">Gaiola de Habilidade<br><em>Neurofuncional</em></h2>
+      <p>A Gaiola de Habilidade Neurofuncional é um recurso terapêutico inovador que utiliza um ambiente estruturado e seguro para estimular o desenvolvimento motor, cognitivo e sensorial de forma integrada.</p>
+      <p>Dentro da gaiola, são realizados exercícios funcionais e lúdicos que trabalham equilíbrio, coordenação, força, planejamento motor e integração sensorial — promovendo ganhos reais na autonomia e qualidade de vida dos pacientes.</p>
+      <p>As sessões são conduzidas por profissionais especializados que adaptam cada atividade às necessidades individuais, garantindo uma abordagem personalizada e eficaz.</p>
+      <div class="gaiola-pills">
+        <div class="gaiola-pill">🧠 Estimulação neurofuncional</div>
+        <div class="gaiola-pill">🤸 Coordenação e equilíbrio</div>
+        <div class="gaiola-pill">💪 Força e planejamento motor</div>
+        <div class="gaiola-pill">🎯 Integração sensorial</div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="vcarousel-wrap" id="vCarousel">
+
+        <!-- ============================================= -->
+        <!-- FOTOS DA GAIOLA: troque os nomes abaixo       -->
+        <!-- pelos nomes reais dos arquivos da pasta.       -->
+        <!-- Exemplo: src="gaiola1.jpg"                    -->
+        <!-- ============================================= -->
+        <img src="gaiola1.jpg" alt="Gaiola de Habilidade Neurofuncional" class="vc-active">
+        <img src="gaiola2.jpg" alt="Gaiola de Habilidade Neurofuncional">
+        <img src="gaiola3.jpg" alt="Gaiola de Habilidade Neurofuncional">
+        <img src="gaiola4.jpg" alt="Gaiola de Habilidade Neurofuncional">
+
+        <div class="vcarousel-dots" id="vcDots">
+          <button class="vc-dot active" aria-label="Foto 1"></button>
+          <button class="vc-dot" aria-label="Foto 2"></button>
+          <button class="vc-dot" aria-label="Foto 3"></button>
+          <button class="vc-dot" aria-label="Foto 4"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
 
 <!-- MEL -->
 <section id="mel">
@@ -548,6 +607,26 @@ track.parentElement.addEventListener('mouseenter',()=>clearInterval(auto));
 track.parentElement.addEventListener('mouseleave',()=>{
   auto=setInterval(()=>{const max=Math.ceil(slides.length/spv())-1;goTo(cur>=max?0:cur+1);},4500);
 });
+
+/* VERTICAL CAROUSEL - GAIOLA */
+(function(){
+  const wrap=document.getElementById('vCarousel');
+  if(!wrap)return;
+  const imgs=[...wrap.querySelectorAll('img')];
+  const dots=[...document.getElementById('vcDots').querySelectorAll('.vc-dot')];
+  let vcCur=0;
+  function vcGo(idx){
+    imgs[vcCur].classList.remove('vc-active');
+    dots[vcCur].classList.remove('active');
+    vcCur=idx%imgs.length;
+    imgs[vcCur].classList.add('vc-active');
+    dots[vcCur].classList.add('active');
+  }
+  dots.forEach((d,i)=>d.addEventListener('click',()=>vcGo(i)));
+  let vcAuto=setInterval(()=>vcGo(vcCur+1),3500);
+  wrap.addEventListener('mouseenter',()=>clearInterval(vcAuto));
+  wrap.addEventListener('mouseleave',()=>{vcAuto=setInterval(()=>vcGo(vcCur+1),3500);});
+})();
 
 /* REVEAL */
 const obs=new IntersectionObserver(entries=>{
